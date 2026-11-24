@@ -67,7 +67,7 @@
       const waterLevel = data.results[0].YOUR_FIELD_NAME;
       
       // 3. SHOW IT ON THE PAGE
-      document.getElementById("level").textContent = waterLevel;
+      document.getElementById("level").textContent = JSON.stringify(data.results[0]);
       document.getElementById("time").textContent = new Date().toLocaleTimeString();
       const status = document.getElementById("status");
 
