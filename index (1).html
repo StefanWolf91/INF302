@@ -64,8 +64,8 @@
 
       // 2. READ THE WATER LEVEL FROM THE JSON
       // 👉 If BOM's JSON uses different names, change this line to match.
-      const waterLevel = data.observations.data[0].water_level_m;
-
+      const waterLevel = data.results[0].YOUR_FIELD_NAME;
+      
       // 3. SHOW IT ON THE PAGE
       document.getElementById("level").textContent = waterLevel;
       document.getElementById("time").textContent = new Date().toLocaleTimeString();
